@@ -1,7 +1,7 @@
 import React from "react";
 
 class Movie extends React.Component {
-  renderStar = () => {
+  renderStar() {
     if (this.props.isFavorite === true) {
       return (
         <img
@@ -12,14 +12,14 @@ class Movie extends React.Component {
       );
     }
     return null;
-  };
-  render = () => {
+  }
+  render() {
     return (
       <div>
         {this.props.name} {this.renderStar()}
       </div>
     );
-  };
+  }
 }
 
 export default Movie;

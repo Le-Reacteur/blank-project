@@ -4,7 +4,7 @@ import Title from "./components/Title";
 import Movie from "./components/Movie";
 
 class App extends Component {
-  render = () => {
+  render() {
     return (
       <div>
         <Title>Movies</Title>
@@ -15,7 +15,7 @@ class App extends Component {
         <Movie name={"Interstellar"} isFavorite={true} />
       </div>
     );
-  };
+  }
 }
 
 export default App;
